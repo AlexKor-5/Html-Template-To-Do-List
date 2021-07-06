@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>To Do list</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Varela&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+<div class="container">
+    <div class="control-panel large">
+        <div class="control-panel__title">
+            <h1>Great To Do List</h1>
+        </div>
+        <div class="control-panel__input">
+            <input type="text" placeholder="Enter your task ...">
+        </div>
+        <div class="control-panel__buttons">
+            <form action="#" method="post" class="form">
+                <button class="form__buttons form__buttons-add">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="svg-wrapper" viewBox="0 0 512 512">
+                        <path class="svg-path"
+                              d="M256 0C114.84 0 0 114.84 0 256s114.84 256 256 256 256-114.84 256-256S397.16 0 256 0zm0 475.429c-120.997 0-219.429-98.432-219.429-219.429S135.003 36.571 256 36.571 475.429 135.003 475.429 256 376.997 475.429 256 475.429z"/>
+                        <path class="svg-path"
+                              d="M256 134.095c-10.1 0-18.286 8.186-18.286 18.286v207.238c0 10.1 8.186 18.286 18.286 18.286 10.1 0 18.286-8.186 18.286-18.286V152.381c0-10.1-8.186-18.286-18.286-18.286z"/>
+                        <path class="svg-path"
+                              d="M359.619 237.714H152.381c-10.1 0-18.286 8.186-18.286 18.286 0 10.1 8.186 18.286 18.286 18.286h207.238c10.1 0 18.286-8.186 18.286-18.286 0-10.1-8.186-18.286-18.286-18.286z"/>
+                    </svg>
+                    <span class="form__buttons-text">Add</span>
+                </button>
+
+                <button class="form__buttons form__buttons-sort">
+                    <svg viewBox="0 0 32 32" class="svg-wrapper" xmlns="http://www.w3.org/2000/svg">
+                        <path class="svg-path"
+                              d="M13 28a1 1 0 01-.53-.15A1 1 0 0112 27v-9.62L4.28 8.81A5 5 0 013 5.46V5a1 1 0 011-1h24a1 1 0 011 1v.46a5 5 0 01-1.28 3.35L20 17.38v5.38a3 3 0 01-1.66 2.69l-4.89 2.44A1 1 0 0113 28zM5.05 6a3 3 0 00.72 1.47l8 8.86A1 1 0 0114 17v8.38l3.45-1.72a1 1 0 00.55-.9V17a1 1 0 01.26-.67l8-8.86A3 3 0 0027 6z"
+                              data-name="Layer 2"/>
+                        <path fill="none" d="M0 0h32v32H0z"/>
+                    </svg>
+                    <span class="form__buttons-text">Sort</span>
+                </button>
+
+                <button class="form__buttons form__buttons-reset">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="svg-wrapper" viewBox="0 0 512 512">
+                        <path class="svg-path"
+                              d="M256 512C114.84 512 0 397.16 0 256S114.84 0 256 0s256 114.84 256 256-114.84 256-256 256zm0-475.43C135.008 36.57 36.57 135.008 36.57 256S135.008 475.43 256 475.43 475.43 376.992 475.43 256 376.992 36.57 256 36.57zm0 0"/>
+                        <path class="svg-path"
+                              d="M347.43 365.715c-4.68 0-9.36-1.785-12.93-5.36L151.645 177.5c-7.145-7.145-7.145-18.715 0-25.855 7.14-7.141 18.714-7.145 25.855 0L360.355 334.5c7.145 7.145 7.145 18.715 0 25.855a18.207 18.207 0 01-12.925 5.36zm0 0"/>
+                        <path class="svg-path"
+                              d="M164.57 365.715c-4.68 0-9.355-1.785-12.925-5.36-7.145-7.14-7.145-18.714 0-25.855L334.5 151.645c7.145-7.145 18.715-7.145 25.855 0 7.141 7.14 7.145 18.714 0 25.855L177.5 360.355a18.216 18.216 0 01-12.93 5.36zm0 0"/>
+                    </svg>
+                    <span class="form__buttons-text">Reset</span>
+                </button>
+            </form>
+        </div>
+    </div>
+    <div class="display-panel">
+        <div class="task">
+            <div class="display-panel__wrapper">
+                <div class="display-panel__number"><span class="display-panel__circle">1</span></div>
+                <div class="display-panel__text"><p>Clean my home
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aperiam beatae blanditiis dicta,
+                    dolor
+                    earum eveniet minus nam nulla porro quam rem vel voluptatem? Dolorem esse officiis omnis
+                    perspiciatis
+                    recusandae repudiandae rerum temporibus unde vitae. Enim laboriosam molestiae nam quae quas quos!
+                    Doloribus facere iste, iusto laudantium libero non provident.
+                </p></div>
+            </div>
+            <div class="display-panel__buttons">
+                <button class="display-panel__button">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="display-panel__svg" viewBox="0 0 512.001 512.001">
+                        <path class="display-panel__path"
+                              d="M496.063 62.299l-46.396-46.4c-21.2-21.199-55.69-21.198-76.888 0l-18.16 18.161 123.284 123.294 18.16-18.161c21.248-21.249 21.251-55.643 0-76.894zM22.012 376.747L.251 494.268a15.002 15.002 0 0017.48 17.482l117.512-21.763-113.231-113.24zM333.407 55.274L38.198 350.506l123.284 123.293 295.209-295.231z"/>
+                    </svg>
+                </button>
+
+                <button class="display-panel__button">
+                    <svg viewBox="0 0 512 512" class="display-panel__svg" xmlns="http://www.w3.org/2000/svg">
+                        <path class="display-panel__path"
+                              d="M369.164 174.77c7.813 7.812 7.813 20.476 0 28.285L234.992 337.23c-7.812 7.81-20.472 7.81-28.285 0l-63.871-63.875c-7.813-7.808-7.813-20.472 0-28.28 7.809-7.813 20.473-7.813 28.281 0l49.73 49.73L340.88 174.77c7.812-7.81 20.476-7.81 28.285 0zM512 256c0 141.504-114.516 256-256 256C114.496 512 0 397.484 0 256 0 114.496 114.516 0 256 0c141.504 0 256 114.516 256 256zm-40 0c0-119.395-96.621-216-216-216-119.395 0-216 96.621-216 216 0 119.395 96.621 216 216 216 119.395 0 216-96.621 216-216zm0 0"/>
+                    </svg>
+                </button>
+
+                <button class="display-panel__button">
+                    <svg viewBox="0 0 512 512" class="display-panel__svg" xmlns="http://www.w3.org/2000/svg">
+                        <path class="display-panel__path"
+                              d="M256 512C114.84 512 0 397.16 0 256S114.84 0 256 0s256 114.84 256 256-114.84 256-256 256zm0-475.43C135.008 36.57 36.57 135.008 36.57 256S135.008 475.43 256 475.43 475.43 376.992 475.43 256 376.992 36.57 256 36.57zm0 0"/>
+                        <path class="display-panel__path"
+                              d="M347.43 365.715c-4.68 0-9.36-1.785-12.93-5.36L151.645 177.5c-7.145-7.145-7.145-18.715 0-25.855 7.14-7.141 18.714-7.145 25.855 0L360.355 334.5c7.145 7.145 7.145 18.715 0 25.855a18.207 18.207 0 01-12.925 5.36zm0 0"/>
+                        <path class="display-panel__path"
+                              d="M164.57 365.715c-4.68 0-9.355-1.785-12.925-5.36-7.145-7.14-7.145-18.714 0-25.855L334.5 151.645c7.145-7.145 18.715-7.145 25.855 0 7.141 7.14 7.145 18.714 0 25.855L177.5 360.355a18.216 18.216 0 01-12.93 5.36zm0 0"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+
+        <div class="task">
+            <div class="display-panel__wrapper">
+                <div class="display-panel__number"><span class="display-panel__circle">2</span></div>
+                <div class="display-panel__text"><p>Clean my home
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aperiam beatae blanditiis dicta,
+                    dolor
+                </p></div>
+            </div>
+            <div class="display-panel__buttons">
+                <button class="display-panel__button">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="display-panel__svg" viewBox="0 0 512.001 512.001">
+                        <path class="display-panel__path"
+                              d="M496.063 62.299l-46.396-46.4c-21.2-21.199-55.69-21.198-76.888 0l-18.16 18.161 123.284 123.294 18.16-18.161c21.248-21.249 21.251-55.643 0-76.894zM22.012 376.747L.251 494.268a15.002 15.002 0 0017.48 17.482l117.512-21.763-113.231-113.24zM333.407 55.274L38.198 350.506l123.284 123.293 295.209-295.231z"/>
+                    </svg>
+                </button>
+
+                <button class="display-panel__button">
+                    <svg viewBox="0 0 512 512" class="display-panel__svg" xmlns="http://www.w3.org/2000/svg">
+                        <path class="display-panel__path"
+                              d="M369.164 174.77c7.813 7.812 7.813 20.476 0 28.285L234.992 337.23c-7.812 7.81-20.472 7.81-28.285 0l-63.871-63.875c-7.813-7.808-7.813-20.472 0-28.28 7.809-7.813 20.473-7.813 28.281 0l49.73 49.73L340.88 174.77c7.812-7.81 20.476-7.81 28.285 0zM512 256c0 141.504-114.516 256-256 256C114.496 512 0 397.484 0 256 0 114.496 114.516 0 256 0c141.504 0 256 114.516 256 256zm-40 0c0-119.395-96.621-216-216-216-119.395 0-216 96.621-216 216 0 119.395 96.621 216 216 216 119.395 0 216-96.621 216-216zm0 0"/>
+                    </svg>
+                </button>
+
+                <button class="display-panel__button">
+                    <svg viewBox="0 0 512 512" class="display-panel__svg" xmlns="http://www.w3.org/2000/svg">
+                        <path class="display-panel__path"
+                              d="M256 512C114.84 512 0 397.16 0 256S114.84 0 256 0s256 114.84 256 256-114.84 256-256 256zm0-475.43C135.008 36.57 36.57 135.008 36.57 256S135.008 475.43 256 475.43 475.43 376.992 475.43 256 376.992 36.57 256 36.57zm0 0"/>
+                        <path class="display-panel__path"
+                              d="M347.43 365.715c-4.68 0-9.36-1.785-12.93-5.36L151.645 177.5c-7.145-7.145-7.145-18.715 0-25.855 7.14-7.141 18.714-7.145 25.855 0L360.355 334.5c7.145 7.145 7.145 18.715 0 25.855a18.207 18.207 0 01-12.925 5.36zm0 0"/>
+                        <path class="display-panel__path"
+                              d="M164.57 365.715c-4.68 0-9.355-1.785-12.925-5.36-7.145-7.14-7.145-18.714 0-25.855L334.5 151.645c7.145-7.145 18.715-7.145 25.855 0 7.141 7.14 7.145 18.714 0 25.855L177.5 360.355a18.216 18.216 0 01-12.93 5.36zm0 0"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <div class="task">
+            <div class="display-panel__wrapper">
+                <div class="display-panel__number"><span class="display-panel__circle">2</span></div>
+                <div class="display-panel__text"><p>Clean my home
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aperiam beatae blanditiis dicta,
+                    dolor
+                </p></div>
+            </div>
+            <div class="display-panel__buttons">
+                <button class="display-panel__button">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="display-panel__svg" viewBox="0 0 512.001 512.001">
+                        <path class="display-panel__path"
+                              d="M496.063 62.299l-46.396-46.4c-21.2-21.199-55.69-21.198-76.888 0l-18.16 18.161 123.284 123.294 18.16-18.161c21.248-21.249 21.251-55.643 0-76.894zM22.012 376.747L.251 494.268a15.002 15.002 0 0017.48 17.482l117.512-21.763-113.231-113.24zM333.407 55.274L38.198 350.506l123.284 123.293 295.209-295.231z"/>
+                    </svg>
+                </button>
+
+                <button class="display-panel__button">
+                    <svg viewBox="0 0 512 512" class="display-panel__svg" xmlns="http://www.w3.org/2000/svg">
+                        <path class="display-panel__path"
+                              d="M369.164 174.77c7.813 7.812 7.813 20.476 0 28.285L234.992 337.23c-7.812 7.81-20.472 7.81-28.285 0l-63.871-63.875c-7.813-7.808-7.813-20.472 0-28.28 7.809-7.813 20.473-7.813 28.281 0l49.73 49.73L340.88 174.77c7.812-7.81 20.476-7.81 28.285 0zM512 256c0 141.504-114.516 256-256 256C114.496 512 0 397.484 0 256 0 114.496 114.516 0 256 0c141.504 0 256 114.516 256 256zm-40 0c0-119.395-96.621-216-216-216-119.395 0-216 96.621-216 216 0 119.395 96.621 216 216 216 119.395 0 216-96.621 216-216zm0 0"/>
+                    </svg>
+                </button>
+
+                <button class="display-panel__button">
+                    <svg viewBox="0 0 512 512" class="display-panel__svg" xmlns="http://www.w3.org/2000/svg">
+                        <path class="display-panel__path"
+                              d="M256 512C114.84 512 0 397.16 0 256S114.84 0 256 0s256 114.84 256 256-114.84 256-256 256zm0-475.43C135.008 36.57 36.57 135.008 36.57 256S135.008 475.43 256 475.43 475.43 376.992 475.43 256 376.992 36.57 256 36.57zm0 0"/>
+                        <path class="display-panel__path"
+                              d="M347.43 365.715c-4.68 0-9.36-1.785-12.93-5.36L151.645 177.5c-7.145-7.145-7.145-18.715 0-25.855 7.14-7.141 18.714-7.145 25.855 0L360.355 334.5c7.145 7.145 7.145 18.715 0 25.855a18.207 18.207 0 01-12.925 5.36zm0 0"/>
+                        <path class="display-panel__path"
+                              d="M164.57 365.715c-4.68 0-9.355-1.785-12.925-5.36-7.145-7.14-7.145-18.714 0-25.855L334.5 151.645c7.145-7.145 18.715-7.145 25.855 0 7.141 7.14 7.145 18.714 0 25.855L177.5 360.355a18.216 18.216 0 01-12.93 5.36zm0 0"/>
+                    </svg>
+                </button>
+            </div>
+    </div>
+</div>
+</body>
+</html>
